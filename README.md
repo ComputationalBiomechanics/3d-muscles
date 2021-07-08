@@ -3,7 +3,7 @@
 This repository contains the data, models and the Matlab scripts to inspect and reproduce the results of the following publication:
 
 ```bibtex
-@article{Modenese2019three,
+@article{Modenese2020three,
   title={Automated Generation of Three-Dimensional Complex Muscle Geometries for Use in Personalised Musculoskeletal Models},
   author={Modenese, Luca and Kohout, Josef},
   journal={Annals of biomedical engineering},
@@ -40,7 +40,7 @@ This repository includes:
 1. LHDL Anatomical dataset (see [reference publication](https://www.jstage.jst.go.jp/article/physiolsci/58/7/58_7_441/_article)) including:
 
 		a. bone geometries (pelvis, right femur)
-		b. muscle geometries for _iliacus_, _psoas_, _gluteus maximus_ and _gluteus medius_
+		b. muscle geometries for iliacus, psoas, gluteus maximus and gluteus medius
 		c. muscle attachments (as point clouds)
 2. OpenSim model with `straight-lines muscles` built from the LHDL dataset using NMSBuilder
 3. Motion data in OpenSim format (`.mot` files) to simulate the following hip motions:
@@ -78,7 +78,7 @@ So the order is:
 # Limitations and notes about reproducibility
 * The highly discretized muscle models are meant to be used for simulating the provided hip joint tasks and nothing else.
 * Please note that the results for the highly discretized muscles presented in the manuscript were generated from kinematic simulations 
-performed in LHPBuilder, a multimodal viewer for biomechanical application that is not developed or supported anymore. 
+performed in LHPBuilder, a multimodal viewer for biomechanical applications that is not developed or supported anymore. 
 A version of LHPBuilder compatible with the use done in this paper can be downloaded from 
 [this website](https://mi.kiv.zcu.cz/en/research/musculoskeletal.html). LHPBuilder is a complex
  tool requiring preliminary training to be used, so we decided instead to implement the muscle fibre kinematics in the OpenSim models directly. 
